@@ -62,3 +62,6 @@ def thread_data():
         print("Send data")
         import random
         socketio.send(str(random.randint(0,100)), to="sensor")
+
+if __name__ == "__main__":
+    app.run(port=8000)
